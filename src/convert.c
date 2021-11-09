@@ -1,6 +1,7 @@
 #include "convert.h"
 
 #include <stdlib.h>
+#include <errno.h>
 #include <stdbool.h>
 #include <limits.h>
 #include "io.h"

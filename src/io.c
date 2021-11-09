@@ -1,6 +1,7 @@
 #include "io.h"
 
 #include <stdlib.h>
+#include <errno.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
@@ -89,7 +90,7 @@ static void veprintf(int err, char *fmt, va_list args) {
 			strcat(buf, str);
 
 			// print the message buffer
-			fprintf(stderr, buf);
+			fprintf(stderr, "%s", buf);
 		}
 
 		// deallocate memory
